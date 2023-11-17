@@ -85,5 +85,11 @@ $(document).ready(function() {
             stickyNav();
         });
 
+
+        var counter = $('.counter').text();
+        counter = parseInt(counter);
+        
+       var  count = (counter > 99) ? '99+' : counter;
+       $('.counter').text(count);
     
 });
