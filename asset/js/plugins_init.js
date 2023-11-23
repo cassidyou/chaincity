@@ -245,6 +245,8 @@ $(document).ready(function () {
 
   });
 
+
+
   // dataTable5
   var table = $('#example5').DataTable({
     searching: false,
@@ -328,6 +330,8 @@ $(document).ready(function () {
 
   // table row
   var table = $('#dataTable1, #dataTable2, #dataTable3, #dataTable4,  #example3, #example4 ').DataTable({
+    select: true,
+    searching: true,
     language: {
       paginate: {
         next: '<i class="fa fa-angle-double-right" aria-hidden="true"></i>',
@@ -338,6 +342,7 @@ $(document).ready(function () {
   $('#example tbody').on('click', 'tr', function () {
     var data = table.row(this).data();
   });
+
 
 
   /****************** Dropify *************************************/
