@@ -15,6 +15,8 @@
     --font-family-reg: 'Nohomi-regular', 'sans-serif';
     --font-family-header-sm: 'Nohomi-semibold', 'sans-serif';
     --font-family-medium: 'Nohomi-medium', 'sans-serif';
+    --font-family-black: 'Nohomi-black', 'sans-serif';
+    --font-family-extra-bold: 'Nohomi-extrabold', 'sans-serif';
 }
 
 
@@ -24,6 +26,20 @@
     box-sizing: border-box;
     font-family: var(--font-family);
 }
+
+.nfxb-heading{
+    font-family: var(--font-family-extra-bold);
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+@media (max-width: 375px){
+    .nfxb-heading{
+        font-size: 25px;
+    }
+}
+
+
 
 h1, h2, h3{
     font-family: var(--font-family-header);
@@ -100,9 +116,9 @@ body {
 
 .rlf-btn, .rlf-btn-sm {
     display: inline-block;
-    font-family: var(--font-family-reg);
+    font-family: var(--font-family-btn);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px!important;
     line-height: 1.5;
     text-align: center;
     text-decoration: none;
@@ -156,8 +172,9 @@ body {
     border-radius: .5rem;
     border: 2px solid rgba(0, 0, 0, 0.1);
     background: #fff;
-    font-weight: 700;
+    font-weight: 500;
     font-family: var(--font-family-btn);
+    font-size: 18px;
 }
 
 .curly-bg{
@@ -1059,6 +1076,12 @@ header{
     margin: 0;
     padding: 0;
     padding-bottom: 14px;
+}
+
+@media (max-width: 320px){
+    .footer ul.links{
+        gap: 0px;
+    }
 }
 
 .footer .links  li a,
