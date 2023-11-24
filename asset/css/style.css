@@ -672,7 +672,8 @@ header{
         width: 200px;
         height: 100vh;
         left: -200px;
-        z-index: 1000;
+        z-index: 99999!important;
+        opacity: 1!important;
         align-items: flex-start !important;
         justify-content: left;
         transition: all .01s ease-in-out;
@@ -2645,6 +2646,7 @@ p.text-sm{
 	padding: 0 20px;
 	box-sizing: border-box;
 	margin: 10% auto;
+    z-index: inherit!important;
 }
 
 .ltn-srh .col-md-3{
@@ -2833,17 +2835,27 @@ p.text-sm{
 .header1 .navbar{
     background-color: transparent;
     width: 100%;
-    top: 50px;
-    position: fixed;
+    top: 0px;
+    position: absolute;
     transition: all .5s;
+    /* min-height: 100px; */
 }
 
 .header1.auth .navbar{
     background-color: #fff!important;
+    /* min-height: 60px!important; */
 }
 
 .header1.auth .navbar .sticky{
     background-color: #fff!important;
+}
+
+.header1.header-index .navbar{
+    min-height: 110px;
+}
+
+.header1.header-index .sticky{
+    min-height: 70px;
 }
 
 .header1 .sticky{
@@ -2851,7 +2863,7 @@ p.text-sm{
     top: 0!important;
     position: fixed!important;
     margin-top: 0!important;
-
+    /* min-height: 70px; */
     animation: smootguy;
 }
 
@@ -3341,7 +3353,7 @@ p.text-sm{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -20%);
     color: #fff;
     min-width: 400px;
 }

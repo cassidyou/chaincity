@@ -87,22 +87,22 @@ $(document).ready(function() {
 
 
         //STICKY TOP NAVBAR FOR HEADER1
-        var scrollTop = $(window).scrollTop();
-          if (scrollTop > 10) {
-            $('.header1').find('nav.navbar').addClass('sticky');
-          }else{
-            $('.header1').find('nav.navbar').removeClass('sticky');
-          }
+        // var scrollTop = $(window).scrollTop();
+        //   if (scrollTop > 10) {
+        //     $('.header1').find('nav.navbar').addClass('sticky');
+        //   }else{
+        //     $('.header1').find('nav.navbar').removeClass('sticky');
+        //   }
        
 
-        $(window).on('scroll', function(){
-          var scrollTop = $(window).scrollTop();
-          if (scrollTop > 10) {
-            $('.header1').find('nav.navbar').addClass('sticky');
-          }else{
-            $('.header1').find('nav.navbar').removeClass('sticky');
-          }
-        });
+        // $(window).on('scroll', function(){
+        //   var scrollTop = $(window).scrollTop();
+        //   if (scrollTop > 10) {
+        //     $('.header1').find('nav.navbar').addClass('sticky');
+        //   }else{
+        //     $('.header1').find('nav.navbar').removeClass('sticky');
+        //   }
+        // });
 
 
 
