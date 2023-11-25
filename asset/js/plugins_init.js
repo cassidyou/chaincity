@@ -364,6 +364,23 @@ $(document).ready(function () {
     });
   }
 
+  if($('.dropify-id').length > 0){
+    $('.dropify-id').dropify({
+      messages: {
+        'default': 'Drag and drop your photos here',
+        'replace': 'Drag and drop or click to replace',
+        'remove': 'Remove',
+        'error': 'Ooops, something wrong appended.'
+      },
+      error: {
+        'fileSize': 'The file size is too big (2M max).'
+      },
+      tpl: {
+            message: '<div class="dropify-message"><img src="../asset/img/front-of-id-card.png" class="img-fluid p-3 h-100" />  </span></div>',
+           
+        }
+    });
+  }
 
   
 

@@ -10,6 +10,7 @@
     --box-shadow3: 0 .4rem 2rem rgba(0, 0, 0, 0.15);
     --box-shadow4: 0 1rem 2rem rgba(0, 0, 0, 0.15);
     --font-family: 'Aeonik-regular', 'sans-serif';
+    --font-family-bold: 'Aeonik-bold', 'sans-serif';
     --font-family-header: 'Nohomi-bold', 'sans-serif';
     --font-family-btn: 'Nohomi-semibold', 'sans-serif';
     --font-family-reg: 'Nohomi-regular', 'sans-serif';
@@ -3701,5 +3702,21 @@ p.text-sm{
 }
 
 
+.ag-pr-vft-title{
+    font-family: var(--font-family-bold);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+@media (max-width: 425px){
+    .ag-pr-vft-title{
+        font-size: 20px;
+    }
+}
+@media (max-width: 320px){
+    .ag-pr-vft-title{
+        font-size: 16px;
+    }
+}
 
   
